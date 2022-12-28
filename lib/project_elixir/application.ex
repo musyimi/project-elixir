@@ -8,6 +8,7 @@ defmodule ProjectElixir.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      ProjectElixir.Repo
       # Starts a worker by calling: ProjectElixir.Worker.start_link(arg)
       # {ProjectElixir.Worker, arg}
     ]

@@ -1,7 +1,7 @@
-config :my_app, MyApp.Repo,
+config :my_db, :ecto_repos, [MyDb.Repo]
+
+config :my_db, MyDb.Repo,
   database: "my_db",
   username: "postgres",
   password: "postgres",
   hostname: "localhost"
-
-config :project_elixir, :ecto_repos, [ProjectElixir.Repo]
